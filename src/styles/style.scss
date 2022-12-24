@@ -21,6 +21,7 @@ $text-color: #565656;
 
 .link {
     text-decoration: none;
+    position: relative;
 }
 
 .main-color {
@@ -72,6 +73,16 @@ $text-color: #565656;
         letter-spacing: 0.3em;
         text-transform: uppercase;
     }
+}
+
+.link_active:after, .nav-list .link:hover:after {
+    content: "";
+    width: 70%;
+    border: 1px solid #000000;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .button {
